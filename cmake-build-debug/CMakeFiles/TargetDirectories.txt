@@ -1,0 +1,3 @@
+/Users/lexonouri/CLionProjects/Mateusz_Moskala_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lexonouri/CLionProjects/Mateusz_Moskala_C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lexonouri/CLionProjects/Mateusz_Moskala_C/cmake-build-debug/CMakeFiles/Mateusz_Moskala_C.dir
