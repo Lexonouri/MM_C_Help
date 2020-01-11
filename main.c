@@ -3,7 +3,7 @@
 
 //Zadanie 1
 int zad1() {
-    //Inicjowanie macieży "A" 2 wiersze 5 kolumn
+    //Inicjowanie macierzy "A" 2 wiersze 5 kolumn
     int A[2][5];
 
     //Komunikat dla usera
@@ -30,7 +30,7 @@ int zad1() {
 
 //Zadanie 2
 float zad2() {
-    //Inicjowanie macieży "A" 2 wiersze 5 kolumn
+    //Inicjowanie macierzy "A" 2 wiersze 5 kolumn
     float T[1][5], max, min;
 
     //Komunikat dla usera
