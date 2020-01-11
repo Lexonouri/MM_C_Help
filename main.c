@@ -30,7 +30,7 @@ int zad1() {
 
 //Zadanie 2
 float zad2() {
-    //Inicjowanie macierzy "A" 2 wiersze 5 kolumn
+    //Inicjowanie macierzy "T" 2 wiersze 5 kolumn
     float T[1][5], max, min;
 
     //Komunikat dla usera
@@ -138,6 +138,64 @@ int zad3() {
 
 }
 
+int zad7() {
+//Inicjowanie macierzy 4x3
+    int M[2][3], sum = 0, chosen_number = 0, parts[2];
+
+    //Komunikat dla usera
+    printf("Wpisz liczby do macierzy:\n");
+
+    //Iteracja pobierająca dane do macierzy
+    for(int i = 0; i < 2; i++) {
+        for(int j = 0; j < 3; j++) {
+            printf("Liczba o indeksie %d x %d\n", i, j);
+            scanf("%d", &M[i][j]);
+            printf("\n");
+        }
+    }
+
+    //Wyświetlenie danych
+    printf("Wizualizacja macierzy:\n");
+    printf("[ %d  %d  %d ]\n", M[0][0], M[0][1], M[0][2]);
+    printf("[ %d  %d  %d ]\n", M[1][0], M[1][1], M[1][2]);
+
+    //Pobieranie numeru kolumny do obliczeń
+    printf("Wpisz numer kolumny (0, 1, 2) który chcesz zsumowawć\n");
+    scanf("%d", &chosen_number);
+
+    //Test na dzbana
+    if(chosen_number >= 0 && chosen_number < 3) {
+
+        //Komunikat
+        printf("Wybrałeś kolumnę numer: %d\n\n", chosen_number);
+
+        //Iteracja sprawdzająca wartości
+        for(int l=0; l<2; l++) {
+            //sumowanie wybranego wiersza
+            parts[l] = M[l][chosen_number];
+            sum += M[l][chosen_number];
+        }
+
+        //Podawanie wyników
+        printf("Suma dla kolumny nr %d: %d\n\n", chosen_number, sum);
+
+        printf("W zapisie wektorowym:\n[");
+        for(int m = 0; m<2; m++) {
+            if(m == 1) {
+                printf("%d",parts[m]);
+            } else {
+                printf("%d,",parts[m]);
+            }
+        }
+        printf("]\n");
+
+    } else {
+
+        printf("Wpisano złą liczbe, wiesz o tym...");
+
+    }
+}
+
 int main() {
 
     //Wywołanie zadania nr 1
@@ -147,7 +205,10 @@ int main() {
     //zad2();
 
     //Wywołanie zadania nr 3
-    zad3();
+    //zad3();
+
+    //Wywołanie zadania nr 7
+    zad7();
 
     return 0;
 
