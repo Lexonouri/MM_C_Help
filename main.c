@@ -4,7 +4,7 @@
 //Zadanie 1
 int zad1() {
     //Inicjowanie macierzy "A" 2 wiersze 5 kolumn
-    int A[2][5];
+    float A[2][5];
 
     //Komunikat dla usera
     printf("Wpisz liczby do obliczenia pierwiastków:\n");
@@ -12,7 +12,7 @@ int zad1() {
     //Iteracja pobierająca dane od usera i wyliczajaca pierwiastki do drugiego wiersza
     for(int i = 0; i < 5; i++) {
         printf("Liczba nr %d: \n", i+1);
-        scanf("%d", &A[0][i]);
+        scanf("%f", &A[0][i]);
         A[1][i] = sqrt(A[0][i]);
         printf("\n");
     }
@@ -22,7 +22,7 @@ int zad1() {
         printf("Wiersz nr %d ", j+1);
         for(int k = 0; k < 5; k++) {
             printf("\n");
-            printf("%d ", A[j][k]);
+            printf("%f ", A[j][k]);
         }
         printf("\n");
     }
@@ -199,7 +199,7 @@ int zad7() {
 int main() {
 
     //Wywołanie zadania nr 1
-    //zad1();
+    zad1();
 
     //Wywołanie zadania nr 2
     //zad2();
@@ -208,7 +208,7 @@ int main() {
     //zad3();
 
     //Wywołanie zadania nr 7
-    zad7();
+    //zad7();
 
     return 0;
 
